@@ -1,0 +1,68 @@
+.hero-section-background {
+  @apply bg-[#495e57] w-full h-96;
+}
+.hero-section-container {
+  @apply flex justify-between w-10/12 px-0 py-16 mx-auto my-0 text-white;
+}
+.section-left {
+  @apply w-4/5;
+}
+.section-left h1 {
+  @apply text-[#f4ce14];
+}
+.section-left h1,
+h2 {
+  @apply leading-[46px];
+}
+.section-left p {
+  @apply w-9/12 mx-0 my-5;
+}
+.btn {
+  @apply text-xl font-semibold bg-[#f4ce14] text-[#333333] px-8 py-4 rounded-2xl border-0 hover:cursor-pointer hover:bg-[#333333] hover:text-[#f4ce14] hover:transition-[0.3s];
+}
+.section-right {
+  @apply relative w-96;
+}
+.image-box {
+  @apply absolute flex items-center justify-center overflow-hidden h-96 rounded-xl;
+}
+.image-box img {
+  @apply w-full;
+}
+@media screen and (max-width: 1024px) {
+  .hero-section-background {
+    @apply pt-24 min-h-[30rem] mb-14;
+  }
+  .image-box {
+    @apply right-0 mt-10 w-80 h-96;
+  }
+  .hero-section-container {
+    @apply w-full p-8;
+  }
+  .section-left h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+}
+@media screen and (max-width: 659px) {
+.hero-section-background {
+  @apply  h-[35rem] mb-16;
+}
+  .hero-section-container {
+    @apply flex-col;
+  }
+  .image-box {
+    @apply flex-initial w-full h-64 ;
+  }
+  .section-left p {
+    @apply w-full text-sm;
+  }
+  .section-right {
+    @apply flex-initial w-full mt-8 -mb-24;
+  }
+  .btn {
+    @apply text-sm;
+  }
+}

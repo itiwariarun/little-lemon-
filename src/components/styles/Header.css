@@ -1,0 +1,45 @@
+header {
+  @apply flex items-center justify-between w-4/5 mx-auto my-0 px-0 py-2.5;
+}
+.logo-img {
+  @apply w-[200px];
+}
+.nav-menu {
+  @apply flex items-center;
+}
+.nav-menu li {
+  @apply px-[15px] py-0;
+}
+.nav-menu li a:hover {
+  @apply text-[#495e57];
+}
+.hamburger,
+.close-hamburger {
+  @apply hidden;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    @apply w-full px-[30px] py-2.5;
+  }
+  .logo-img {
+    @apply w-[150px];
+  }
+  .nav-menu {
+    @apply flex-col items-end justify-start h-screen absolute z-10 transition-[0.5s] pl-[120px] pr-[30px] pt-20 pb-5 -right-full top-0;
+    background: #edefee;
+  }
+  .nav-menu.active {
+    @apply top-0 right-0;
+  }
+  .nav-menu li {
+    @apply px-0 py-2.5;
+  }
+  .nav-menu li a {
+    @apply text-[#333333] text-[smaller];
+  }
+  .hamburger,
+  .close-hamburger {
+    @apply leading-[0.8] z-[11];
+    display: initial;
+  }
+}

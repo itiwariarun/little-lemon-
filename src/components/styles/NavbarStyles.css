@@ -1,0 +1,18 @@
+.header {
+  @apply bg-white;
+}
+.header-wrapper {
+  @apply flex items-center justify-between w-10/12 mx-auto my-0;
+}
+@media screen and (max-width: 1024px) {
+  .header-wrapper {
+    @apply w-full px-8;
+  }
+  .header-wrapper .mobile-nav ul {
+    @apply flex flex-col absolute w-full text-right pt-2.5 pb-8 px-8;
+    background: azure;
+  }
+  .header-wrapper .mobile-nav ul li {
+    @apply px-0 py-2.5;
+  }
+}

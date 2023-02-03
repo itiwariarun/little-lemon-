@@ -1,0 +1,17 @@
+.navigation ul {
+  @apply flex;
+}
+.navigation ul li {
+  @apply px-4 py-0;
+}
+.navigation ul li a {
+  @apply text-sm font-medium hover:text-[#495e57];
+}
+.navigation ul li .active-links.active {
+  @apply text-[#495e57];
+}
+@media screen and (max-width: 1024px) {
+  .navigation {
+    @apply hidden;
+  }
+}

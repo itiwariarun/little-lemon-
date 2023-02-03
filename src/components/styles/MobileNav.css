@@ -1,0 +1,14 @@
+.mobile-nav {
+  @apply hidden;
+}
+@media screen and (max-width: 1024px) {
+  .mobile-nav {
+    @apply flex;
+  }
+  .mobile-nav ul li a {
+    @apply text-sm font-medium;
+  }
+  .mobile-nav ul li .active-links.active {
+    @apply text-[#495e57];
+  }
+}

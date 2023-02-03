@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&family=Markazi+Text:wght@400;500&display=swap');
+
+* {
+  @apply box-border p-0 m-0;
+}
+body {
+  @apply text-xl text-[#333333];
+  font-family: "Karla", sans-serif;
+}
+input {
+  @apply text-base text-[#333];
+  font-family: "karla", sans-serif;
+}
+::placeholder {
+  @apply text-[#949494] opacity-100;
+  /* Firefox */
+}
+:-ms-input-placeholder {
+  @apply text-[#333333];
+  /* Internet Explorer 10-11 */
+}
+::-ms-input-placeholder {
+  @apply text-[#333333];
+  /* Microsoft Edge */
+}
+h1,
+h2 {
+  font-family: "Markazi Text", serif;
+}
+h1 {
+  @apply text-[85px];
+}
+h2 {
+  @apply text-[53.32px];
+}
+h3 {
+  @apply text-2xl;
+}
+ul {
+  @apply list-none;
+}
+a {
+  @apply no-underline text-[#333333];
 }

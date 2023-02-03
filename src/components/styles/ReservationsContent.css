@@ -1,0 +1,74 @@
+.res-content-wrapper {
+  @apply bg-[linear-gradient(to_bottom,rgba(0,0,0,0.42),rgba(0,0,0,0.73)),url("https://a.cdn-hotels.com/gdcs/production141/d778/6b200721-9661-4680-aca2-d6e33ce46cf0.jpg")] w-full bg-cover;
+}
+.res-content-container {
+  @apply flex items-start justify-between gap-24 w-10/12 mx-auto my-0 px-0 py-20;
+}
+.text {
+  @apply text-white w-3/5 mt-24;
+}
+.text h2 {
+  @apply mb-8;
+}
+.text p {
+  @apply mb-5;
+}
+.form {
+  @apply w-2/5 h-auto bg-white text-[#333333] text-left pt-8 pb-14 px-10 rounded-lg;
+}
+.form h1 {
+  @apply text-3xl mb-2;
+}
+.form p {
+  @apply text-sm mb-8;
+}
+fieldset {
+  @apply border-0;
+}
+.field {
+  @apply flex flex-col w-full mb-5;
+}
+.field label {
+  @apply text-lg font-medium mt-0 mb-1.5 mx-0;
+}
+input {
+  @apply border w-full p-2.5 rounded-md border-solid border-[rgba(51,51,51,0.3)];
+}
+input[type="datetime-local"] {
+  @apply text-[#949494];
+}
+.guestsdate {
+  @apply grid grid-cols-[68%_28%] gap-[4%];
+}
+.occasion {
+  @apply flex flex-col;
+}
+.options {
+  @apply border pr-2.5 rounded-md border-solid border-[rgba(51,51,51,0.3)];
+}
+select {
+  @apply outline-0 w-full text-base text-[#949494] p-2.5 border-0;
+}
+.reserve-btn {
+  @apply w-full cursor-pointer bg-[#333333] text-base font-bold text-white p-5 rounded-md border-0 hover:bg-[#495e57] hover:transition-[0.3s];
+}
+.error-message {
+  @apply text-base text-[red] mt-1.5;
+}
+@media screen and (max-width: 1024px) {
+  .res-content-container {
+    @apply flex-col w-full px-8;
+  }
+  .text {
+    @apply w-full mt-12;
+  }
+  .text p {
+    @apply mb-0;
+  }
+  .form {
+    @apply w-full -mt-12;
+  }
+  .guestsdate {
+    @apply flex flex-col;
+  }
+}

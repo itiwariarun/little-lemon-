@@ -1,0 +1,47 @@
+.special-card {
+  @apply grid grid-cols-[31%_31%_31%] gap-9 mt-5;
+}
+.special-card-container {
+  @apply bg-[#edefee] rounded-[20px_20px_0_0];
+}
+.special-card-text {
+  @apply px-5 pt-8 pb-10;
+}
+.special-card-title {
+  @apply flex justify-between;
+}
+.price-tag {
+  @apply text-[#ee9972];
+}
+.special-card-text p {
+  @apply mx-0 mt-8 mb-12 text-xl leading-5;
+}
+.special-card-text h4 {
+  @apply flex items-center text-xl;
+}
+.image-container {
+  @apply w-full h-80 overflow-hidden flex items-center rounded-[20px_20px_0_0];
+}
+.image-container img {
+  @apply w-full;
+}
+@media screen and (max-width: 1040px) {
+  .special-card {
+    @apply grid-cols-[47%_47%];
+  }
+}
+@media screen and (max-width: 659px) {
+  .special-card {
+    @apply flex flex-col;
+  }
+  .special-card-text p,
+  h3 {
+    @apply text-sm;
+  }
+  .special-card-text h4 {
+    @apply text-sm;
+  }
+  .image-container {
+    @apply h-52;
+  }
+}
