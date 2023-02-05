@@ -66,9 +66,17 @@ select {
     @apply mb-0;
   }
   .form {
-    @apply w-full -mt-12;
+    @apply min-w-full -mt-12;
   }
   .guestsdate {
     @apply flex flex-col;
+  }
+}
+@media screen and (max-width: 320px) {
+ .res-content-container {
+    @apply flex-col w-full px-3;
+  }
+  .form{
+    @apply min-w-full px-3
   }
 }

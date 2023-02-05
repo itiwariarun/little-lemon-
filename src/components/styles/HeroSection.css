@@ -48,7 +48,7 @@ h2 {
 }
 @media screen and (max-width: 659px) {
 .hero-section-background {
-  @apply  h-[35rem] mb-16;
+  @apply  h-[36rem] mb-14;
 }
   .hero-section-container {
     @apply flex-col;
@@ -60,9 +60,15 @@ h2 {
     @apply w-full text-sm;
   }
   .section-right {
-    @apply flex-initial w-full mt-8 -mb-24;
+    @apply flex-initial w-full mt-8 -mb-14;
   }
   .btn {
     @apply text-sm;
   }
+}
+@media screen and (max-width: 322px) {
+.hero-section-background {
+    @apply pt-24 min-h-[40rem] mb-14;
+  }
+
 }
